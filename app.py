@@ -1,9 +1,19 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(layout="wide")
-st.title("Visualize CSV Data with Streamlit ")
+st.title("Analyzing Car Sharing Data with Streamlit ")
 
+
+st.sidebar.header("This is sidebar section")
+
+
+
+
+
+
+
+
+st.set_page_config(layout="wide")
 df = pd.read_csv("datasets/trips_data_1000.csv")
 print(df.describe())
 
